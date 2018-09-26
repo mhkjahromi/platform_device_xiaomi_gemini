@@ -28,6 +28,8 @@ public class BootReceiver extends BroadcastReceiver implements Utils {
 
     public void onReceive(Context context, Intent intent) {
 
+	KeyHandler.setButtonSetting(context);
+
         if (Settings.Secure.getInt(context.getContentResolver(), PREF_ENABLED, 0) == 1) {
             FileUtils.setValue(KCAL_ENABLE, Settings.Secure.getInt(context.getContentResolver(),
                     PREF_ENABLED, 0));
