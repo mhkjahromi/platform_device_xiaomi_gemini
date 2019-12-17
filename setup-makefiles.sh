@@ -16,6 +16,13 @@
 # limitations under the License.
 #
 
+# Required!
+export DEVICE=gemini
+export DEVICE_COMMON=msm8996-common
+export VENDOR=xiaomi
+
+export DEVICE_BRINGUP_YEAR=2016
+
 set -e
 
 INITIAL_COPYRIGHT_YEAR=2017

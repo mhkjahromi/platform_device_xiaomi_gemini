@@ -15,8 +15,18 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+if [ "${BASH_SOURCE[0]}" != "${0}" ]; then
+    return
+fi
 
 set -e
+
+# Required!
+export DEVICE=gemini
+export DEVICE_COMMON=msm8996-common
+export VENDOR=xiaomi
+
+export DEVICE_BRINGUP_YEAR=2016
 
 # Load extract_utils and do some sanity checks
 MY_DIR="${BASH_SOURCE%/*}"
