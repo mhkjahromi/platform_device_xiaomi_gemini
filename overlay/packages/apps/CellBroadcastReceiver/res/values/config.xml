@@ -26,7 +26,4 @@
 
     <!-- Whether to enable channel 50 and 60 settings (India) -->
     <bool name="show_india_settings">true</bool>
-
-    <!-- Whether to enable channel 50 and 60 settings (India) -->
-    <bool name="show_india_settings">true</bool>
 </resources>
