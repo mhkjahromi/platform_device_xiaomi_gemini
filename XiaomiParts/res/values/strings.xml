@@ -16,7 +16,7 @@
 -->
 <resources>
     <string name="advanced_settings">Device Features</string>
-    <string name="advanced_settings_summary">Extra Settings</string>
+    <string name="advanced_settings_summary">Device Settings</string>
 
     <string name="display_title">Display</string>
 
