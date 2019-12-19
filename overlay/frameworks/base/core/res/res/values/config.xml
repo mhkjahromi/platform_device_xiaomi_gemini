@@ -350,6 +350,9 @@
         <item>392.9</item>
     </array>
 
+    <!-- Button backlight -->
+    <bool name="config_deviceHasVariableButtonBrightness">true</bool>
+
     <!-- Array of output values for button backlight corresponding to the LUX values
          in the config_autoBrightnessLevels array.  This array should have size one greater
          than the size of the config_autoBrightnessLevels array.
@@ -393,6 +396,13 @@
 
     <!-- Whether device supports double tap to wake -->
     <bool name="config_supportDoubleTapWake">true</bool>
+
+    <!-- Whether to post reset runnable for all clients. Needed for some older
+         vendor fingerprint HAL implementations. -->
+    <bool name="config_fingerprintPostResetRunnableForAllClients">true</bool>
+
+    <!-- Whether to cleanup fingerprints upon connection to the daemon and when user switches -->
+    <bool name="config_cleanupUnusedFingerprints">false</bool>
 
     <!-- Configure mobile tcp buffer sizes in the form:
          rat-name:rmem_min,rmem_def,rmem_max,wmem_min,wmem_def,wmem_max
