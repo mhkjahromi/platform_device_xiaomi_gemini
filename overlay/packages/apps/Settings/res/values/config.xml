@@ -22,4 +22,9 @@
          3 = right side
     -->
     <integer name="config_fingerprintSensorLocation">1</integer>
+
+   <!-- Device specific doze package -->
+   <string name="config_customDozePackage" translatable="false">
+       <item>org.lineageos.settings.doze/org.lineageos.settings.doze.DozeSettingsActivity</item>
+   </string>
 </resources>
