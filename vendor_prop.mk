@@ -41,8 +41,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.audio.parser.ip.buffer.size=262144 \
     vendor.audio.safx.pbe.enabled=true \
     vendor.audio.tunnel.encode=false \
-    vendor.voice.path.for.pcm.voip=true
-
+    vendor.voice.path.for.pcm.voip=true\
+    persist.dirac.acs.controller=qem \
+    persist.dirac.acs.ignore_error=1 \
+    persist.dirac.acs.storeSettings=1 \
+    ro.audio.soundfx.dirac=true
 # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
     bt.max.hfpclient.connections=1 \
