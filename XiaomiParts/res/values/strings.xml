@@ -16,7 +16,7 @@
 -->
 <resources>
     <string name="advanced_settings">Device Features</string>
-    <string name="advanced_settings_summary">Spacial Device Settings</string>
+    <string name="advanced_settings_summary">Device specific features</string>
 
     <string name="display_title">Display</string>
 
@@ -138,7 +138,7 @@
     <string name="fp_wakeup_summary">Allow fingerprint to wake the device while screen is off</string>
     <string name="fp_home_title">Fingerprint as button</string>
     <string name="fp_home_summary">Use fingerprint reader as a customizeble button</string>
-	<string name="fp_pocketmode_title">Fingerprint Pocketmode</string>
+	<string name="fp_pocketmode_title">Fingerprint pocketmode</string>
 	<string name="fp_pocketmode_summary">Turn off fingerprint when your device is in the pocket</string>
 		
     <!-- Gestures -->
