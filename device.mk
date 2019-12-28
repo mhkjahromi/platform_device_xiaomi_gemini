@@ -160,7 +160,9 @@ PRODUCT_PACKAGES += \
     init.qcom.power.rc \
     init.qcom.usb.rc \
     ueventd.qcom.rc \
-    init.target.rc
+    init.target.rc \
+#    init.spectrum.rc \
+#    init.spectrum.sh
 
 # Consumer IR
 PRODUCT_PACKAGES += \

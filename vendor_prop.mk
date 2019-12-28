@@ -172,6 +172,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.data.df.iwlan_mux=9 \
     persist.data.df.dev_name=rmnet_usb0
 
+# Spectrum kernel manager
+PRODUCT_PROPERTY_OVERRIDES += \
+ 	persist.spectrum.profile=0 
+     
 # TimeService
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.timed.enable=true
