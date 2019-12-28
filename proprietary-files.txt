@@ -461,6 +461,13 @@ vendor/bin/hw/android.hardware.drm@1.1-service.widevine|2c2455a218eb8d5368f1ccd3
 vendor/etc/init/android.hardware.drm@1.1-service.widevine.rc|5a01d337c1d375ee24a6c8992ba91f54afb7637e
 vendor/lib/libwvhidl.so|37333d17980282275805807bc648bf8516fd4143
 
+# EAS Blobs
+vendor/lib/hw/power.msm8996.so|97b55c611cf5793b0cacf8c8fdfd0eaaba903a4b
+vendor/lib/libcutils.so|e89efd581d00f6b29604d0937d9f58faea4d9a54
+vendor/lib64/hw/power.msm8996.so|5ff1ae899c6b4f27463c0e2f75df4a4c8b2f8a80
+vendor/lib64/hw/power.msm8996_debug.so|084a88df5d35cea417c58e830c533680a66cff48
+vendor/lib64/libcutils.so|2d6a4958f177d05bc1fa6b08994ecf34d1d8182e
+
 # Fingerprint
 lib64/hw/fingerprint.fpc.so:vendor/lib64/hw/fingerprint.fpc.so|15fa15959d44bdf3760a3009d6a8b61a7f9e8830
 
