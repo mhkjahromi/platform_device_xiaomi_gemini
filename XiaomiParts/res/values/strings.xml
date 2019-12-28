@@ -150,6 +150,11 @@
     <string name="kcal_presets" translatable="false">@string/presets_dialog_title</string>
     <string name="kcal_reset">Reset</string>
 
+    <!-- usb fastcharge -->
+    <string name="usb_fastcharge_title">USB Fastcharge</string>
+    <string name="fastcharge_title">Enable USB Fastcharge</string>
+    <string name="fastcharge_summary">Use fastcharge when connected to a computer via usb port</string>
+
     <!-- CustomSeekBarPreference -->
     <string name="edit_value">Choose new Value</string>
     <string name="default_value">Default Value</string>

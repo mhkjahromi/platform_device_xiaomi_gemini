@@ -77,7 +77,13 @@ public class DeviceSettings extends PreferenceFragment implements
     public static final String CATEGORY_DT2W = "dt2_w";
     public static final String PREF_DT2_W = "dt2w";
     public static final String DT2_W_PATH = "/proc/touchpanel/double_tap_enable";
-	
+    
+    //usbfastcharge
+    public static final String CATEGORY_FASTCHARGE = "usb_fastcharge";
+    public static final String PREF_USB_FASTCHARGE = "fastcharge";
+    public static final String USB_FASTCHARGE_PATH = "/sys/kernel/fast_charge/force_fast_charge";
+
+    //doze
     public static final String DEVICE_DOZE_PACKAGE_NAME = "org.lineageos.settings.doze";
 
     private SecureSettingCustomSeekBarPreference mTorchBrightness;
@@ -91,7 +97,8 @@ public class DeviceSettings extends PreferenceFragment implements
     private SecureSettingSwitchPreference mFpwakeup;
     private SecureSettingSwitchPreference mFphome;
     private SecureSettingSwitchPreference mDt2w;
-	private SecureSettingSwitchPreference mFppocket;
+    private SecureSettingSwitchPreference mFppocket;
+    private SecureSettingSwitchPreference mFastcharge;
 
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
@@ -189,6 +196,14 @@ public class DeviceSettings extends PreferenceFragment implements
         } else {
             getPreferenceScreen().removePreference(findPreference(CATEGORY_FPPOCKET));
         }
+
+        if (FileUtils.fileWritable(USB_FASTCHARGE_PATH)) {
+            mFastcharge = (SecureSettingSwitchPreference) findPreference(PREF_USB_FASTCHARGE);
+            mFastcharge.setChecked(FileUtils.getFileValueAsBoolean(USB_FASTCHARGE_PATH, false));
+            mFastcharge.setOnPreferenceChangeListener(this);
+        } else {
+            getPreferenceScreen().removePreference(findPreference(CATEGORY_FASTCHARGE));
+        }
     }
 
     @Override
@@ -256,6 +271,10 @@ public class DeviceSettings extends PreferenceFragment implements
 				
             case PREF_FP_POCKET:
                 FileUtils.setValue(FP_POCKET_PATH, (boolean) value);
+                break;
+
+            case PREF_USB_FASTCHARGE:
+                FileUtils.setValue(USB_FASTCHARGE_PATH, (boolean) value);
                 break;
 
             default:
