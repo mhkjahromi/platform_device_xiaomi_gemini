@@ -60,9 +60,9 @@ BOARD_RAMDISK_OFFSET := 0x01000000
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_SOURCE := kernel/xiaomi/msm8996
 TARGET_KERNEL_CONFIG := gemini_defconfig
-KERNEL_TOOLCHAIN := /home/mhkjahromi/tc/arm64-gcc/bin
+KERNEL_TOOLCHAIN := /home/mhkjahromi/Android_Developments/tmp/kernel-dev/gaymini/backup/arm64-gcc/bin
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-elf-
-TARGET_KERNEL_CROSS_COMPILE_ARM32 := /home/mhkjahromi/tc/arm32-gcc/bin/arm-eabi-
+TARGET_KERNEL_CROSS_COMPILE_ARM32 := /home/mhkjahromi/Android_Developments/tmp/kernel-dev/gaymini/backup/arm32-gcc/bin/arm-eabi-
 
 # Platform
 TARGET_BOARD_PLATFORM := msm8996
